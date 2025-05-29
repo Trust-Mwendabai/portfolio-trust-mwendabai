@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trust Muhau Mwendabai - Web Development Portfolio">
+    <title>Portfolio - Trust Mwendabai</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Trust Mwendabai</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h1 class="page-title">My Portfolio</h1>
+                    <p class="page-subtitle">Showcasing my recent web development projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section py-5" style="background: linear-gradient(135deg, #f0f4f8 0%, #e4e7eb 100%); padding: 100px 0;">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title" style="color: #1a237e; font-size: 2.5rem; font-weight: 700; position: relative; display: inline-block;">
+                        My Recent Projects
+                        <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background-color: #64ffda;"></span>
+                    </h2>
+                    <p class="lead" style="color: #2c3e50; font-size: 1.25rem; margin-top: 20px;">Here are some of the projects I've worked on recently</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-filter mb-5" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">Apps</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+            
+            <div class="row">
+                <!-- ZamFash E-Commerce -->
+                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-category="web">
+                    <div class="card h-100" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <div style="position: relative; overflow: hidden;">
+                            <img src="https://via.placeholder.com/600x400/4361ee/ffffff?text=ZamFash+E-Commerce" class="card-img-top" alt="ZamFash E-Commerce" style="transition: transform 0.5s ease;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
+                                <div style="display: flex;">
+                                    <a href="https://trust-mwendabai.github.io/ZamFash/" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Trust-Mwendabai/ZamFash" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body" style="padding: 25px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: 1.3rem;">ZamFash E-Commerce</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">E-Commerce</span>
+                            </div>
+                            <p class="card-text" style="color: #455a64; margin-bottom: 20px;">Fashion e-commerce platform with product catalog and shopping cart functionality.</p>
+                            <div class="d-flex flex-wrap mb-3">
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">HTML5</span>
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">CSS3</span>
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">JavaScript</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="display: flex;">
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-html5"></i></span>
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-css3-alt"></i></span>
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-js"></i></span>
+                                </div>
+                                <div>
+                                    <a href="https://trust-mwendabai.github.io/ZamFash/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 20px; padding: 5px 15px; font-weight: 600; box-shadow: 0 5px 15px rgba(126, 87, 194, 0.3); transition: all 0.3s ease; margin-right: 5px;" target="_blank">Live Demo</a>
+                                    <a href="https://github.com/Trust-Mwendabai/ZamFash" class="btn btn-sm" style="border: 1px solid #4a148c; color: #4a148c; background-color: transparent; border-radius: 20px; padding: 5px 15px; font-weight: 600; transition: all 0.3s ease;" target="_blank">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather App -->
+                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100" data-category="app">
+                    <div class="card h-100" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <div style="position: relative; overflow: hidden;">
+                            <img src="https://via.placeholder.com/600x400/5390d9/ffffff?text=Weather+App" class="card-img-top" alt="Weather App" style="transition: transform 0.5s ease;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
+                                <div style="display: flex;">
+                                    <a href="https://trust-mwendabai.github.io/weather-app/" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Trust-Mwendabai/weather-app" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body" style="padding: 25px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: 1.3rem;">Weather App</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">API Integration</span>
+                            </div>
+                            <p class="card-text" style="color: #455a64; margin-bottom: 20px;">Real-time weather forecast application with location search functionality.</p>
+                            <div class="d-flex flex-wrap mb-3">
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">JavaScript</span>
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">Weather API</span>
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">Bootstrap</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="display: flex;">
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-js"></i></span>
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fas fa-cloud"></i></span>
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-bootstrap"></i></span>
+                                </div>
+                                <div>
+                                    <a href="https://trust-mwendabai.github.io/weather-app/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 20px; padding: 5px 15px; font-weight: 600; box-shadow: 0 5px 15px rgba(126, 87, 194, 0.3); transition: all 0.3s ease; margin-right: 5px;" target="_blank">Live Demo</a>
+                                    <a href="https://github.com/Trust-Mwendabai/weather-app" class="btn btn-sm" style="border: 1px solid #4a148c; color: #4a148c; background-color: transparent; border-radius: 20px; padding: 5px 15px; font-weight: 600; transition: all 0.3s ease;" target="_blank">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evenza Event Platform -->
+                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200" data-category="web">
+                    <div class="card h-100" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <div style="position: relative; overflow: hidden;">
+                            <img src="https://via.placeholder.com/600x400/6930c3/ffffff?text=Evenza+Events" class="card-img-top" alt="Evenza Event Platform" style="transition: transform 0.5s ease;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
+                                <div style="display: flex;">
+                                    <a href="http://evenza.ct.ws/" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body" style="padding: 25px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: 1.3rem;">Evenza Event Platform</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">Web App</span>
+                            </div>
+                            <p class="card-text" style="color: #455a64; margin-bottom: 20px;">Event management and ticketing platform with payment integration.</p>
+                            <div class="d-flex flex-wrap mb-3">
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">PHP</span>
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">MySQL</span>
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">jQuery</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="display: flex;">
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-php"></i></span>
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fas fa-database"></i></span>
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-js"></i></span>
+                                </div>
+                                <div>
+                                    <a href="http://evenza.ct.ws/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 20px; padding: 5px 15px; font-weight: 600; box-shadow: 0 5px 15px rgba(126, 87, 194, 0.3); transition: all 0.3s ease;" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Website -->
+                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300" data-category="web">
+                    <div class="card h-100" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <div style="position: relative; overflow: hidden;">
+                            <img src="https://via.placeholder.com/600x400/5e60ce/ffffff?text=Portfolio+Website" class="card-img-top" alt="Portfolio Website" style="transition: transform 0.5s ease;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
+                                <div style="display: flex;">
+                                    <a href="#" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Trust-Mwendabai/" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body" style="padding: 25px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: 1.3rem;">Professional Portfolio</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">Personal Site</span>
+                            </div>
+                            <p class="card-text" style="color: #455a64; margin-bottom: 20px;">Modern portfolio website with animation and responsive design.</p>
+                            <div class="d-flex flex-wrap mb-3">
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">HTML5</span>
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">CSS3</span>
+                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">Bootstrap</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="display: flex;">
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-html5"></i></span>
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-css3-alt"></i></span>
+                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-bootstrap"></i></span>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 20px; padding: 5px 15px; font-weight: 600; box-shadow: 0 5px 15px rgba(126, 87, 194, 0.3); transition: all 0.3s ease; margin-right: 5px;">Live Demo</a>
+                                    <a href="https://github.com/Trust-Mwendabai/" class="btn btn-sm" style="border: 1px solid #4a148c; color: #4a148c; background-color: transparent; border-radius: 20px; padding: 5px 15px; font-weight: 600; transition: all 0.3s ease;" target="_blank">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Project 1 Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">E-Commerce Platform</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://via.placeholder.com/600x400/4361ee/ffffff?text=E-Commerce+Website" alt="E-Commerce Website" class="img-fluid mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Project Overview</h5>
+                            <p>A comprehensive e-commerce platform with secure payment integration, user authentication, and product management.</p>
+                            
+                            <h5>Technologies Used</h5>
+                            <ul>
+                                <li>React.js for frontend</li>
+                                <li>Node.js and Express for backend</li>
+                                <li>MongoDB for database</li>
+                                <li>Stripe for payment processing</li>
+                            </ul>
+                            
+                            <h5>Key Features</h5>
+                            <ul>
+                                <li>Responsive design for all devices</li>
+                                <li>Product search and filtering</li>
+                                <li>User authentication and profiles</li>
+                                <li>Secure payment processing</li>
+                                <li>Order tracking and history</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-outline-primary">Visit Site</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p class="lead mb-4">Let's discuss how I can help bring your vision to life</p>
+                    <a href="https://wa.me/263777342846" class="btn btn-lg btn-success me-3"><i class="fab fa-whatsapp me-2"></i>Chat on WhatsApp</a>
+                    <a href="index.html#contact" class="btn btn-lg btn-outline-light">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Trust Muhau Mwendabai. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a id="back-to-top" href="#" class="back-to-top" role="button" aria-label="Scroll back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
