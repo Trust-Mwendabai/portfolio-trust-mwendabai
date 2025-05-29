@@ -185,6 +185,24 @@
     transition-delay: 0.1s;
 }
 
+/* Bounce animation for hero scroll indicator */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero-scroll-indicator a {
+    animation: bounce 2s infinite;
+    display: inline-block;
+}
+
 /* Button hover effects */
 .btn[style*="background: linear-gradient"] {
     transition: all 0.3s ease !important;
@@ -200,8 +218,86 @@
     transform: translateY(-3px) !important;
 }
 
-/* Responsive Media Queries */
+/* Core Responsive Design Rules */
+/* These rules follow Bootstrap's responsive approach */
+
+/* Core Responsive Elements */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn {
+    white-space: normal; /* Allow buttons to wrap text on small screens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:active {
+    transform: scale(0.95); /* Touch feedback for mobile */
+}
+
+/* Consistent spacing using rem units */
+.section-spacing {
+    padding: 5rem 0;
+}
+
+/* Responsive Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Apply animations to sections */
+.animated-section {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.section-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #64ffda;
+    animation: lineGrow 1s ease-out 0.5s forwards;
+}
+
+@keyframes lineGrow {
+    to { width: 80px; }
+}
+
+/* Touch-friendly improvements */
+input, textarea, select, button {
+    font-size: 16px !important; /* Prevents iOS zoom on focus */
+}
+
+a, button, .card, .nav-link {
+    touch-action: manipulation; /* Improves touch response */
+}
+
+/* Responsive Media Queries - Mobile First Approach */
+/* Base styles for mobile devices, then scale up */
+
+/* Medium devices (tablets, 992px and down) */
 @media (max-width: 991px) {
+    /* Text sizing */
     .navbar-brand {
         font-size: 1.2rem;
     }
@@ -218,93 +314,234 @@
         font-size: 1.1rem !important;
     }
     
+    /* Card and component spacing */
     .service-card, .pricing-card, .portfolio-card, .card {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem; /* 30px in rem */
     }
     
+    /* Float buttons sizing */
     .whatsapp-btn {
-        width: 55px;
-        height: 55px;
-        font-size: 26px;
+        width: 3.438rem; /* 55px in rem */
+        height: 3.438rem;
+        font-size: 1.625rem; /* 26px in rem */
     }
     
     .back-to-top {
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
+        width: 2.813rem; /* 45px in rem */
+        height: 2.813rem;
+        line-height: 2.813rem;
     }
     
+    /* Spacing adjustments */
     .contact-item {
-        margin-bottom: 20px !important;
+        margin-bottom: 1.25rem !important; /* 20px in rem */
     }
     
     div[style*="padding: 40px"] {
-        padding: 30px !important;
+        padding: 1.875rem !important; /* 30px in rem */
     }
     
+    /* Icon sizing */
     div[style*="width: 80px; height: 80px"] {
-        width: 65px !important;
-        height: 65px !important;
+        width: 4.063rem !important; /* 65px in rem */
+        height: 4.063rem !important;
+    }
+    
+    /* Section padding */
+    section[style*="padding: 100px 0"] {
+        padding: 4.375rem 0 !important; /* 70px in rem */
     }
 }
 
+/* Tablet and mobile styles (767px and below) */
 @media (max-width: 767px) {
+    /* Enhanced responsive navbar */
+    .navbar {
+        padding: 0.625rem 0 !important; /* 10px */
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1) !important;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem !important;
+        padding-left: 0.5rem !important;
+    }
+    
+    .navbar-toggler {
+        border: none !important;
+        padding: 0.25rem 0.5rem !important;
+        margin-right: 0.5rem !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem !important;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255,255,255,0.05) !important;
+    }
+    
+    /* Heading adjustments */
     h1[style*="font-size"] {
         font-size: 2rem !important;
+        line-height: 1.3 !important;
     }
     
     h2[style*="font-size"] {
         font-size: 1.8rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    /* Box model adjustments */
+    .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
     
     div[style*="padding: 40px"] {
-        padding: 25px !important;
+        padding: 1.5rem !important;
     }
     
+    section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    /* Project and service cards optimization */
+    .card {
+        height: auto !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .card-body {
+        padding: 1rem !important;
+    }
+    
+    /* Better image display */
+    img.img-fluid {
+        border-radius: 0.625rem !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Contact section improvements */
     .contact-item {
-        flex-direction: column !important;
-        text-align: center;
+        flex-direction: row !important;
         align-items: center !important;
+        margin-bottom: 1.25rem !important;
     }
     
     .contact-item > div:first-child {
-        margin-right: 0 !important;
-        margin-bottom: 15px !important;
+        margin-right: 0.9375rem !important;
+        margin-bottom: 0 !important;
+        min-width: 3.125rem !important;
     }
     
-    footer h3 {
-        font-size: 1.3rem !important;
+    /* Icon sizing */
+    div[style*="width: 70px; height: 70px"], 
+    div[style*="width: 60px; height: 60px"] {
+        width: 3.125rem !important; /* 50px */
+        height: 3.125rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     
+    /* Project cards layout */
+    .portfolio-section .card-body {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    .portfolio-section .card-body > div:first-child {
+        margin-bottom: 0.625rem !important;
+    }
+    
+    /* Better badge sizing and spacing */
+    .badge {
+        padding: 0.3125rem 0.625rem !important;
+        margin: 0.125rem !important;
+        font-size: 0.75rem !important;
+    }
+    
+    /* Float button positioning */
     .whatsapp-btn {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        bottom: 15px;
-        left: 15px;
+        width: 3.125rem; /* 50px */
+        height: 3.125rem;
+        font-size: 1.5rem;
+        bottom: 0.9375rem;
+        left: 0.9375rem;
     }
     
     .back-to-top {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 16px;
-        bottom: 15px;
-        right: 15px;
-    }
-    
-    div[style*="width: 70px; height: 70px"] {
-        width: 55px !important;
-        height: 55px !important;
-    }
-    
-    div[style*="width: 60px; height: 60px"] {
-        width: 50px !important;
-        height: 50px !important;
+        width: 2.5rem; /* 40px */
+        height: 2.5rem;
+        line-height: 2.5rem;
+        font-size: 1rem;
+        bottom: 0.9375rem;
+        right: 0.9375rem;
     }
 }
 
+/* Maintain consistent column layout across all device sizes */
+
+/* 3-column layout for cards and grid items */
+.portfolio-grid .col-md-6, 
+.portfolio-grid .col-lg-4,
+.row .col-md-6.col-lg-4,
+.portfolio-section .row .col-md-6.col-lg-4,
+.col-sm-6, .col-md-6, .col-lg-4 {
+    width: 33.333% !important;
+    flex: 0 0 33.333% !important;
+    max-width: 33.333% !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+}
+
+/* Footer columns - maintain 3 column layout */
+footer .col-lg-4 {
+    width: 33.333% !important;
+    flex: 0 0 33.333% !important;
+    max-width: 33.333% !important;
+    margin-bottom: 0 !important;
+}
+
+/* Contact section - maintain 2 column layout */
+.contact-section .row .col-md-6 {
+    width: 50% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+}
+
 @media (max-width: 575px) {
+    /* Make all text elements smaller */
+    .contact-item h4 {
+        font-size: 0.8rem !important;
+    }
+    
+    .contact-item a, .contact-item p {
+        font-size: 0.7rem !important;
+    }
+    
+    /* Further reduce card padding */
+    .card-body {
+        padding: 0.5rem !important;
+    }
+    
+    /* Add touch-friendly spacing */
+    .btn {
+        margin-bottom: 0.25rem !important;
+        margin-top: 0.25rem !important;
+    }
+}
+
+/* Small device enhancements (smartphones, less than 576px) */
+@media (max-width: 575px) {
+    /* Text sizing */
     h1[style*="font-size"] {
         font-size: 1.8rem !important;
     }
@@ -313,37 +550,103 @@
         font-size: 1.5rem !important;
     }
     
-    a[style*="padding: 15px 40px"] {
-        padding: 10px 20px !important;
-        font-size: 14px !important;
+    h3, h4 {
+        font-size: 1.2rem !important;
     }
     
+    h5, h6 {
+        font-size: 1rem !important;
+    }
+    
+    p, span, a:not(.btn) {
+        font-size: 0.875rem !important;
+    }
+    
+    /* Make buttons more touch-friendly */
+    .btn, a.btn, button.btn {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.875rem !important;
+        margin: 0.25rem !important;
+    }
+    
+    a[style*="padding: 15px 40px"] {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.875rem !important;
+    }
+    
+    /* Make cards more compact but readable */
+    .card-body {
+        padding: 0.75rem !important;
+    }
+    
+    .card-title {
+        font-size: 1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .card-text {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.5rem !important;
+        flex: 1;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3; /* Standard property for compatibility */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    /* Spacing adjustments for better mobile display */
+    .container {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    
+    .row {
+        margin-left: -0.5rem !important;
+        margin-right: -0.5rem !important;
+    }
+    
+    [class*="col-"] {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    
+    /* Reduce padding on sections */
+    section {
+        padding: 2.5rem 0 !important;
+    }
+    
+    /* Optimize social buttons */
     .contact-social {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 0.5rem !important;
     }
     
     .social-btn {
-        margin-bottom: 10px;
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        font-size: 1rem !important;
     }
     
-    div[style*="display: flex; gap: 15px"] {
-        justify-content: center !important;
+    /* Padding adjustments for all elements */
+    div[style*="padding:"] {
+        padding: 0.75rem !important;
     }
     
-    div[style*="padding: 40px 30px"] {
-        padding: 25px 15px !important;
+    /* Icon sizing adjustments */
+    .fa, .fas, .far, .fab {
+        font-size: 90% !important;
     }
     
-    div[style*="padding: 25px"] {
-        padding: 20px !important;
-    }
-    
-    div[style*="border-radius: 15px"] {
-        border-radius: 10px !important;
-    }
-    
+    /* Hide tooltip on small screens */
     .whatsapp-tooltip {
         display: none;
+    }
+    
+    /* Ensure proper spacing in footer */
+    footer p, footer li, footer a {
+        font-size: 0.8rem !important;
     }
 }

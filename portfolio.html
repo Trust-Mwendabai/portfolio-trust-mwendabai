@@ -60,58 +60,86 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio-section py-5" style="background: linear-gradient(135deg, #f0f4f8 0%, #e4e7eb 100%); padding: 100px 0;">
+    <section class="portfolio-section py-5 animated-section" style="background: linear-gradient(135deg, #f0f4f8 0%, #e4e7eb 100%); padding: 5rem 0;">
         <div class="container">
-            <div class="row justify-content-center mb-5">
+            <div class="row justify-content-center mb-4">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <h2 class="section-title" style="color: #1a237e; font-size: 2.5rem; font-weight: 700; position: relative; display: inline-block;">
+                    <h2 class="section-title" style="color: #1a237e; font-size: clamp(2rem, 5vw, 2.5rem); font-weight: 700; position: relative; display: inline-block;">
                         My Recent Projects
-                        <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background-color: #64ffda;"></span>
+                        <span style="position: absolute; bottom: -0.625rem; left: 50%; transform: translateX(-50%); width: 5rem; height: 0.1875rem; background-color: #64ffda;"></span>
                     </h2>
-                    <p class="lead" style="color: #2c3e50; font-size: 1.25rem; margin-top: 20px;">Here are some of the projects I've worked on recently</p>
+                    <p class="lead" style="color: #2c3e50; font-size: clamp(1rem, 3vw, 1.25rem); margin-top: 1.25rem;">Here are some of the projects I've worked on recently</p>
                 </div>
             </div>
             
-            <div class="portfolio-filter mb-5" data-aos="fade-up">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Design</button>
-                <button class="filter-btn" data-filter="app">Apps</button>
-                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            <!-- Portfolio Filter - Enhanced for mobile with touch-friendly design -->
+            <div class="portfolio-filter-container mb-4" style="position: relative; overflow: hidden;" data-aos="fade-up">
+                <div class="filter-scroll" style="overflow-x: auto; padding: 0.5rem 0; -webkit-overflow-scrolling: touch; scrollbar-width: none; margin: 0 -0.5rem;">
+                    <div class="filter-buttons d-flex flex-nowrap justify-content-center" style="min-width: 100%; padding: 0 0.5rem;">
+                        <button class="filter-btn active" data-filter="all" style="background-color: #4a148c; color: white; border: none; padding: clamp(0.5rem, 2vw, 0.75rem) clamp(0.75rem, 3vw, 1.25rem); border-radius: 1.5625rem; font-weight: 600; transition: all 0.3s ease; margin: 0.25rem clamp(0.25rem, 1vw, 0.5rem); font-size: clamp(0.75rem, 2vw, 0.875rem); min-width: max-content; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-th-large" style="margin-right: 0.5rem;"></i> All
+                        </button>
+                        <button class="filter-btn" data-filter="web" style="background-color: transparent; color: #4a148c; border: 1px solid #4a148c; padding: clamp(0.5rem, 2vw, 0.75rem) clamp(0.75rem, 3vw, 1.25rem); border-radius: 1.5625rem; font-weight: 600; transition: all 0.3s ease; margin: 0.25rem clamp(0.25rem, 1vw, 0.5rem); font-size: clamp(0.75rem, 2vw, 0.875rem); min-width: max-content; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-globe" style="margin-right: 0.5rem;"></i> Web Design
+                        </button>
+                        <button class="filter-btn" data-filter="app" style="background-color: transparent; color: #4a148c; border: 1px solid #4a148c; padding: clamp(0.5rem, 2vw, 0.75rem) clamp(0.75rem, 3vw, 1.25rem); border-radius: 1.5625rem; font-weight: 600; transition: all 0.3s ease; margin: 0.25rem clamp(0.25rem, 1vw, 0.5rem); font-size: clamp(0.75rem, 2vw, 0.875rem); min-width: max-content; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-mobile-alt" style="margin-right: 0.5rem;"></i> Apps
+                        </button>
+                        <button class="filter-btn" data-filter="ui" style="background-color: transparent; color: #4a148c; border: 1px solid #4a148c; padding: clamp(0.5rem, 2vw, 0.75rem) clamp(0.75rem, 3vw, 1.25rem); border-radius: 1.5625rem; font-weight: 600; transition: all 0.3s ease; margin: 0.25rem clamp(0.25rem, 1vw, 0.5rem); font-size: clamp(0.75rem, 2vw, 0.875rem); min-width: max-content; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-paint-brush" style="margin-right: 0.5rem;"></i> UI/UX
+                        </button>
+                    </div>
+                </div>
             </div>
             
-            <div class="row">
+            <div class="row gx-3 gy-4">
                 <!-- ZamFash E-Commerce -->
-                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-category="web">
-                    <div class="card h-100" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
-                        <div style="position: relative; overflow: hidden;">
-                            <img src="https://via.placeholder.com/600x400/4361ee/ffffff?text=ZamFash+E-Commerce" class="card-img-top" alt="ZamFash E-Commerce" style="transition: transform 0.5s ease;">
+                <div class="col-md-6 col-lg-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-category="web">
+                    <div class="card project-card h-100" style="border-radius: clamp(0.75rem, 2vw, 0.9375rem); overflow: hidden; box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1); border: none; transition: all 0.3s ease; transform: translateZ(0); backface-visibility: hidden;">
+                        <!-- Project Image with Overlay -->
+                        <div style="position: relative; overflow: hidden; padding-top: 66.67%;">
+                            <img src="images/zamfash.png" class="card-img-top" alt="ZamFash E-Commerce" style="transition: transform 0.5s ease; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            
+                            <!-- Overlay with Links - Enhanced touch targets -->
                             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
-                                <div style="display: flex;">
-                                    <a href="https://trust-mwendabai.github.io/ZamFash/" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/Trust-Mwendabai/ZamFash" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fab fa-github"></i></a>
+                                <div style="display: flex; gap: clamp(0.75rem, 3vw, 1.25rem);">
+                                    <a href="https://trust-mwendabai.github.io/ZamFash/" target="_blank" class="project-link" style="color: white; width: clamp(2.5rem, 8vw, 3.5rem); height: clamp(2.5rem, 8vw, 3.5rem); display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2); border-radius: 50%; transition: all 0.3s ease; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                                        <i class="fas fa-external-link-alt" style="font-size: clamp(0.875rem, 2.5vw, 1.25rem);"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body" style="padding: 25px;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: 1.3rem;">ZamFash E-Commerce</h5>
-                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">E-Commerce</span>
+                        
+                        <!-- Card Content - Improved mobile spacing -->
+                        <div class="card-body" style="padding: clamp(0.75rem, 4vw, 1.5625rem);">
+                            <!-- Title and Tag - Better spacing for small screens -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: clamp(0.5rem, 2vw, 0.75rem); gap: clamp(0.5rem, 2vw, 0.75rem);">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: clamp(0.875rem, 2.5vw, 1.125rem); width: fit-content;">ZamFash E-Commerce</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 0.25rem 0.625rem; border-radius: 1.25rem; font-size: clamp(0.625rem, 1.5vw, 0.75rem); font-weight: 600; white-space: nowrap;">E-Commerce</span>
                             </div>
-                            <p class="card-text" style="color: #455a64; margin-bottom: 20px;">Fashion e-commerce platform with product catalog and shopping cart functionality.</p>
-                            <div class="d-flex flex-wrap mb-3">
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">HTML5</span>
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">CSS3</span>
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">JavaScript</span>
+                            
+                            <!-- Description - Improved text handling for mobile -->
+                            <p class="card-text" style="color: #455a64; margin-bottom: clamp(0.5rem, 2vw, 0.75rem); font-size: clamp(0.75rem, 1.8vw, 0.875rem); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; max-height: calc(1.5em * 3);">Fashion e-commerce platform with product catalog and shopping cart functionality.</p>
+                            
+                            <!-- Tech Tags -->
+                            <div class="d-flex flex-wrap mb-3" style="gap: 0.25rem;">
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">HTML5</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">CSS3</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">JavaScript</span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="display: flex;">
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-html5"></i></span>
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-css3-alt"></i></span>
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-js"></i></span>
+                            
+                            <!-- Tech Icons and Buttons -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 0.5rem;">
+                                <!-- Tech Icons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-html5"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-css3-alt"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-js"></i></span>
                                 </div>
-                                <div>
-                                    <a href="https://trust-mwendabai.github.io/ZamFash/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 20px; padding: 5px 15px; font-weight: 600; box-shadow: 0 5px 15px rgba(126, 87, 194, 0.3); transition: all 0.3s ease; margin-right: 5px;" target="_blank">Live Demo</a>
-                                    <a href="https://github.com/Trust-Mwendabai/ZamFash" class="btn btn-sm" style="border: 1px solid #4a148c; color: #4a148c; background-color: transparent; border-radius: 20px; padding: 5px 15px; font-weight: 600; transition: all 0.3s ease;" target="_blank">View Code</a>
+                                
+                                <!-- Action Buttons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <a href="https://trust-mwendabai.github.io/ZamFash/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 1.25rem; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.5rem, 2vw, 0.9375rem); font-weight: 600; box-shadow: 0 0.3125rem 0.9375rem rgba(126, 87, 194, 0.3); transition: all 0.3s ease; font-size: clamp(0.625rem, 1.5vw, 0.75rem); white-space: nowrap;" target="_blank">Live Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -119,37 +147,52 @@
                 </div>
 
                 <!-- Weather App -->
-                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100" data-category="app">
-                    <div class="card h-100" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
-                        <div style="position: relative; overflow: hidden;">
-                            <img src="https://via.placeholder.com/600x400/5390d9/ffffff?text=Weather+App" class="card-img-top" alt="Weather App" style="transition: transform 0.5s ease;">
+                <div class="col-md-6 col-lg-4 col-sm-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="100" data-category="app">
+                    <div class="card h-100" style="border-radius: 0.9375rem; overflow: hidden; box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <!-- Project Image with Overlay -->
+                        <div style="position: relative; overflow: hidden; padding-top: 66.67%;">
+                            <img src="https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Weather App" style="transition: transform 0.5s ease; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            
+                            <!-- Overlay with Links -->
                             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
-                                <div style="display: flex;">
-                                    <a href="https://trust-mwendabai.github.io/weather-app/" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/Trust-Mwendabai/weather-app" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fab fa-github"></i></a>
+                                <div style="display: flex; gap: 0.75rem;">
+                                    <a href="https://trust-mwendabai.github.io/WeatherApp/" target="_blank" style="color: white; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2); border-radius: 50%; transition: all 0.3s ease;">
+                                        <i class="fas fa-external-link-alt" style="font-size: clamp(0.875rem, 2vw, 1.25rem);"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body" style="padding: 25px;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: 1.3rem;">Weather App</h5>
-                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">API Integration</span>
+                        
+                        <!-- Card Content -->
+                        <div class="card-body" style="padding: clamp(0.75rem, 3vw, 1.5625rem);">
+                            <!-- Title and Tag -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.75rem; gap: 0.5rem;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: clamp(0.875rem, 2vw, 1.125rem);">Weather App</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 0.25rem 0.625rem; border-radius: 1.25rem; font-size: clamp(0.625rem, 1.5vw, 0.75rem); font-weight: 600; white-space: nowrap;">Mobile App</span>
                             </div>
-                            <p class="card-text" style="color: #455a64; margin-bottom: 20px;">Real-time weather forecast application with location search functionality.</p>
-                            <div class="d-flex flex-wrap mb-3">
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">JavaScript</span>
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">Weather API</span>
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">Bootstrap</span>
+                            
+                            <!-- Description -->
+                            <p class="card-text" style="color: #455a64; margin-bottom: 0.75rem; font-size: clamp(0.75rem, 1.5vw, 0.875rem); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">Weather forecast application with real-time data and location-based services.</p>
+                            
+                            <!-- Tech Tags -->
+                            <div class="d-flex flex-wrap mb-3" style="gap: 0.25rem;">
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">JavaScript</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">API</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">CSS3</span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="display: flex;">
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-js"></i></span>
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fas fa-cloud"></i></span>
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-bootstrap"></i></span>
+                            
+                            <!-- Tech Icons and Buttons -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 0.5rem;">
+                                <!-- Tech Icons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-js"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-css3-alt"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fas fa-cloud"></i></span>
                                 </div>
-                                <div>
-                                    <a href="https://trust-mwendabai.github.io/weather-app/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 20px; padding: 5px 15px; font-weight: 600; box-shadow: 0 5px 15px rgba(126, 87, 194, 0.3); transition: all 0.3s ease; margin-right: 5px;" target="_blank">Live Demo</a>
-                                    <a href="https://github.com/Trust-Mwendabai/weather-app" class="btn btn-sm" style="border: 1px solid #4a148c; color: #4a148c; background-color: transparent; border-radius: 20px; padding: 5px 15px; font-weight: 600; transition: all 0.3s ease;" target="_blank">View Code</a>
+                                
+                                <!-- Action Buttons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <a href="https://trust-mwendabai.github.io/WeatherApp/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 1.25rem; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.5rem, 2vw, 0.9375rem); font-weight: 600; box-shadow: 0 0.3125rem 0.9375rem rgba(126, 87, 194, 0.3); transition: all 0.3s ease; font-size: clamp(0.625rem, 1.5vw, 0.75rem); white-space: nowrap;" target="_blank">Live Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -157,73 +200,370 @@
                 </div>
 
                 <!-- Evenza Event Platform -->
-                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200" data-category="web">
-                    <div class="card h-100" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
-                        <div style="position: relative; overflow: hidden;">
-                            <img src="https://via.placeholder.com/600x400/6930c3/ffffff?text=Evenza+Events" class="card-img-top" alt="Evenza Event Platform" style="transition: transform 0.5s ease;">
+                <div class="col-md-6 col-lg-4 col-sm-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="200" data-category="web">
+                    <div class="card h-100" style="border-radius: 0.9375rem; overflow: hidden; box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <!-- Project Image with Overlay -->
+                        <div style="position: relative; overflow: hidden; padding-top: 66.67%;">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Evenza Event Platform" style="transition: transform 0.5s ease; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            
+                            <!-- Overlay with Links -->
                             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
-                                <div style="display: flex;">
-                                    <a href="http://evenza.ct.ws/" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fas fa-external-link-alt"></i></a>
+                                <div style="display: flex; gap: 0.75rem;">
+                                    <a href="http://evenza.ct.ws/" target="_blank" style="color: white; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2); border-radius: 50%; transition: all 0.3s ease;">
+                                        <i class="fas fa-external-link-alt" style="font-size: clamp(0.875rem, 2vw, 1.25rem);"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body" style="padding: 25px;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: 1.3rem;">Evenza Event Platform</h5>
-                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">Web App</span>
+                        
+                        <!-- Card Content -->
+                        <div class="card-body" style="padding: clamp(0.75rem, 3vw, 1.5625rem);">
+                            <!-- Title and Tag -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.75rem; gap: 0.5rem;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: clamp(0.875rem, 2vw, 1.125rem);">Evenza Event Platform</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 0.25rem 0.625rem; border-radius: 1.25rem; font-size: clamp(0.625rem, 1.5vw, 0.75rem); font-weight: 600; white-space: nowrap;">Event Management</span>
                             </div>
-                            <p class="card-text" style="color: #455a64; margin-bottom: 20px;">Event management and ticketing platform with payment integration.</p>
-                            <div class="d-flex flex-wrap mb-3">
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">PHP</span>
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">MySQL</span>
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">jQuery</span>
+                            
+                            <!-- Description -->
+                            <p class="card-text" style="color: #455a64; margin-bottom: 0.75rem; font-size: clamp(0.75rem, 1.5vw, 0.875rem); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">Event management platform with booking and ticketing capabilities.</p>
+                            
+                            <!-- Tech Tags -->
+                            <div class="d-flex flex-wrap mb-3" style="gap: 0.25rem;">
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">React</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">Node.js</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">MongoDB</span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="display: flex;">
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-php"></i></span>
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fas fa-database"></i></span>
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-js"></i></span>
+                            
+                            <!-- Tech Icons and Buttons -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 0.5rem;">
+                                <!-- Tech Icons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-react"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-node-js"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fas fa-database"></i></span>
                                 </div>
-                                <div>
-                                    <a href="http://evenza.ct.ws/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 20px; padding: 5px 15px; font-weight: 600; box-shadow: 0 5px 15px rgba(126, 87, 194, 0.3); transition: all 0.3s ease;" target="_blank">Live Demo</a>
+                                
+                                <!-- Action Buttons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <a href="http://evenza.ct.ws/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 1.25rem; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.5rem, 2vw, 0.9375rem); font-weight: 600; box-shadow: 0 0.3125rem 0.9375rem rgba(126, 87, 194, 0.3); transition: all 0.3s ease; font-size: clamp(0.625rem, 1.5vw, 0.75rem); white-space: nowrap;" target="_blank">Live Demo</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Portfolio Website -->
-                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300" data-category="web">
-                    <div class="card h-100" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
-                        <div style="position: relative; overflow: hidden;">
-                            <img src="https://via.placeholder.com/600x400/5e60ce/ffffff?text=Portfolio+Website" class="card-img-top" alt="Portfolio Website" style="transition: transform 0.5s ease;">
+                <div class="col-md-6 col-lg-4 col-sm-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="300" data-category="web">
+                    <div class="card h-100" style="border-radius: 0.9375rem; overflow: hidden; box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <!-- Project Image with Overlay -->
+                        <div style="position: relative; overflow: hidden; padding-top: 66.67%;">
+                            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Portfolio Website" style="transition: transform 0.5s ease; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            
+                            <!-- Overlay with Links -->
                             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
-                                <div style="display: flex;">
-                                    <a href="#" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/Trust-Mwendabai/" target="_blank" style="margin: 0 10px; color: white; font-size: 24px;"><i class="fab fa-github"></i></a>
+                                <div style="display: flex; gap: 0.75rem;">
+                                    <a href="#" style="color: white; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2); border-radius: 50%; transition: all 0.3s ease;">
+                                        <i class="fas fa-external-link-alt" style="font-size: clamp(0.875rem, 2vw, 1.25rem);"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body" style="padding: 25px;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: 1.3rem;">Professional Portfolio</h5>
-                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">Personal Site</span>
+                        
+                        <!-- Card Content -->
+                        <div class="card-body" style="padding: clamp(0.75rem, 3vw, 1.5625rem);">
+                            <!-- Title and Tag -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.75rem; gap: 0.5rem;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: clamp(0.875rem, 2vw, 1.125rem);">Professional Portfolio</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 0.25rem 0.625rem; border-radius: 1.25rem; font-size: clamp(0.625rem, 1.5vw, 0.75rem); font-weight: 600; white-space: nowrap;">Personal Site</span>
                             </div>
-                            <p class="card-text" style="color: #455a64; margin-bottom: 20px;">Modern portfolio website with animation and responsive design.</p>
-                            <div class="d-flex flex-wrap mb-3">
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">HTML5</span>
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">CSS3</span>
-                                <span class="badge me-2 mb-2" style="background-color: #f0f4f8; color: #4a148c; padding: 6px 12px; border-radius: 12px; font-weight: 500;">Bootstrap</span>
+                            
+                            <!-- Description -->
+                            <p class="card-text" style="color: #455a64; margin-bottom: 0.75rem; font-size: clamp(0.75rem, 1.5vw, 0.875rem); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">Modern portfolio website with animation and responsive design.</p>
+                            
+                            <!-- Tech Tags -->
+                            <div class="d-flex flex-wrap mb-3" style="gap: 0.25rem;">
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">HTML5</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">CSS3</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">Bootstrap</span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="display: flex;">
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-html5"></i></span>
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-css3-alt"></i></span>
-                                    <span style="margin-right: 10px; color: #7e57c2; font-size: 18px;"><i class="fab fa-bootstrap"></i></span>
+                            
+                            <!-- Tech Icons and Buttons -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 0.5rem;">
+                                <!-- Tech Icons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-html5"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-css3-alt"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-bootstrap"></i></span>
                                 </div>
-                                <div>
-                                    <a href="#" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 20px; padding: 5px 15px; font-weight: 600; box-shadow: 0 5px 15px rgba(126, 87, 194, 0.3); transition: all 0.3s ease; margin-right: 5px;">Live Demo</a>
-                                    <a href="https://github.com/Trust-Mwendabai/" class="btn btn-sm" style="border: 1px solid #4a148c; color: #4a148c; background-color: transparent; border-radius: 20px; padding: 5px 15px; font-weight: 600; transition: all 0.3s ease;" target="_blank">View Code</a>
+                                
+                                <!-- Action Buttons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <a href="#" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 1.25rem; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.5rem, 2vw, 0.9375rem); font-weight: 600; box-shadow: 0 0.3125rem 0.9375rem rgba(126, 87, 194, 0.3); transition: all 0.3s ease; font-size: clamp(0.625rem, 1.5vw, 0.75rem); white-space: nowrap;" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CareerPathway Guide -->
+                <div class="col-md-6 col-lg-4 col-sm-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="400" data-category="web">
+                    <div class="card h-100" style="border-radius: 0.9375rem; overflow: hidden; box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <!-- Project Image with Overlay -->
+                        <div style="position: relative; overflow: hidden; padding-top: 66.67%;">
+                            <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Career Pathway Guide" style="transition: transform 0.5s ease; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            
+                            <!-- Overlay with Links -->
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
+                                <div style="display: flex; gap: 0.75rem;">
+                                    <a href="https://trust-mwendabai.github.io/CareerPathway-Guide/" target="_blank" style="color: white; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2); border-radius: 50%; transition: all 0.3s ease;">
+                                        <i class="fas fa-external-link-alt" style="font-size: clamp(0.875rem, 2vw, 1.25rem);"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card Content -->
+                        <div class="card-body" style="padding: clamp(0.75rem, 3vw, 1.5625rem);">
+                            <!-- Title and Tag -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.75rem; gap: 0.5rem;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: clamp(0.875rem, 2vw, 1.125rem);">CareerPathway Guide</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 0.25rem 0.625rem; border-radius: 1.25rem; font-size: clamp(0.625rem, 1.5vw, 0.75rem); font-weight: 600; white-space: nowrap;">Career Tool</span>
+                            </div>
+                            
+                            <!-- Description -->
+                            <p class="card-text" style="color: #455a64; margin-bottom: 0.75rem; font-size: clamp(0.75rem, 1.5vw, 0.875rem); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">Interactive career path finder with personalized recommendations and resources.</p>
+                            
+                            <!-- Tech Tags -->
+                            <div class="d-flex flex-wrap mb-3" style="gap: 0.25rem;">
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">JavaScript</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">HTML/CSS</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">API</span>
+                            </div>
+                            
+                            <!-- Tech Icons and Buttons -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 0.5rem;">
+                                <!-- Tech Icons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-js"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-html5"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-css3-alt"></i></span>
+                                </div>
+                                
+                                <!-- Action Buttons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <a href="https://trust-mwendabai.github.io/CareerPathway-Guide/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 1.25rem; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.5rem, 2vw, 0.9375rem); font-weight: 600; box-shadow: 0 0.3125rem 0.9375rem rgba(126, 87, 194, 0.3); transition: all 0.3s ease; font-size: clamp(0.625rem, 1.5vw, 0.75rem); white-space: nowrap;" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Resume Builder -->
+                <div class="col-md-6 col-lg-4 col-sm-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="500" data-category="web">
+                    <div class="card h-100" style="border-radius: 0.9375rem; overflow: hidden; box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <!-- Project Image with Overlay -->
+                        <div style="position: relative; overflow: hidden; padding-top: 66.67%;">
+                            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Digital Resume Builder" style="transition: transform 0.5s ease; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            
+                            <!-- Overlay with Links -->
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
+                                <div style="display: flex; gap: 0.75rem;">
+                                    <a href="https://trust-mwendabai.github.io/digital-resume-builder/" target="_blank" style="color: white; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2); border-radius: 50%; transition: all 0.3s ease;">
+                                        <i class="fas fa-external-link-alt" style="font-size: clamp(0.875rem, 2vw, 1.25rem);"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card Content -->
+                        <div class="card-body" style="padding: clamp(0.75rem, 3vw, 1.5625rem);">
+                            <!-- Title and Tag -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.75rem; gap: 0.5rem;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: clamp(0.875rem, 2vw, 1.125rem);">Digital Resume Builder</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 0.25rem 0.625rem; border-radius: 1.25rem; font-size: clamp(0.625rem, 1.5vw, 0.75rem); font-weight: 600; white-space: nowrap;">Resume Tool</span>
+                            </div>
+                            
+                            <!-- Description -->
+                            <p class="card-text" style="color: #455a64; margin-bottom: 0.75rem; font-size: clamp(0.75rem, 1.5vw, 0.875rem); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">Professional resume builder with customizable templates and export options.</p>
+                            
+                            <!-- Tech Tags -->
+                            <div class="d-flex flex-wrap mb-3" style="gap: 0.25rem;">
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">JavaScript</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">HTML/CSS</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">PDF Export</span>
+                            </div>
+                            
+                            <!-- Tech Icons and Buttons -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 0.5rem;">
+                                <!-- Tech Icons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-js"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-html5"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-css3-alt"></i></span>
+                                </div>
+                                
+                                <!-- Action Buttons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <a href="https://trust-mwendabai.github.io/digital-resume-builder/" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 1.25rem; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.5rem, 2vw, 0.9375rem); font-weight: 600; box-shadow: 0 0.3125rem 0.9375rem rgba(126, 87, 194, 0.3); transition: all 0.3s ease; font-size: clamp(0.625rem, 1.5vw, 0.75rem); white-space: nowrap;" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AgroSmart-Market -->
+                <div class="col-md-6 col-lg-4 col-sm-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="600" data-category="web">
+                    <div class="card h-100" style="border-radius: 0.9375rem; overflow: hidden; box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <!-- Project Image with Overlay -->
+                        <div style="position: relative; overflow: hidden; padding-top: 66.67%;">
+                            <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="AgroSmart Market" style="transition: transform 0.5s ease; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            
+                            <!-- Overlay with Links -->
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
+                                <div style="display: flex; gap: 0.75rem;">
+                                    <a href="https://github.com/Trust-Mwendabai/AgroSmart-Market" target="_blank" style="color: white; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2); border-radius: 50%; transition: all 0.3s ease;">
+                                        <i class="fas fa-external-link-alt" style="font-size: clamp(0.875rem, 2vw, 1.25rem);"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card Content -->
+                        <div class="card-body" style="padding: clamp(0.75rem, 3vw, 1.5625rem);">
+                            <!-- Title and Tag -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.75rem; gap: 0.5rem;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: clamp(0.875rem, 2vw, 1.125rem);">AgroSmart Market</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 0.25rem 0.625rem; border-radius: 1.25rem; font-size: clamp(0.625rem, 1.5vw, 0.75rem); font-weight: 600; white-space: nowrap;">Agriculture</span>
+                            </div>
+                            
+                            <!-- Description -->
+                            <p class="card-text" style="color: #455a64; margin-bottom: 0.75rem; font-size: clamp(0.75rem, 1.5vw, 0.875rem); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">Digital marketplace connecting farmers and buyers with real-time agricultural pricing.</p>
+                            
+                            <!-- Tech Tags -->
+                            <div class="d-flex flex-wrap mb-3" style="gap: 0.25rem;">
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">PHP</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">MySQL</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">Bootstrap</span>
+                            </div>
+                            
+                            <!-- Tech Icons and Buttons -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 0.5rem;">
+                                <!-- Tech Icons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-php"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fas fa-database"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-bootstrap"></i></span>
+                                </div>
+                                
+                                <!-- Action Buttons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <a href="https://github.com/Trust-Mwendabai/AgroSmart-Market" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 1.25rem; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.5rem, 2vw, 0.9375rem); font-weight: 600; box-shadow: 0 0.3125rem 0.9375rem rgba(126, 87, 194, 0.3); transition: all 0.3s ease; font-size: clamp(0.625rem, 1.5vw, 0.75rem); white-space: nowrap;" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solar Project -->
+                <div class="col-md-6 col-lg-4 col-sm-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="700" data-category="web">
+                    <div class="card h-100" style="border-radius: 0.9375rem; overflow: hidden; box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <!-- Project Image with Overlay -->
+                        <div style="position: relative; overflow: hidden; padding-top: 66.67%;">
+                            <img src="https://images.unsplash.com/photo-1559302995-f1d7613ae035?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Solar Project" style="transition: transform 0.5s ease; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            
+                            <!-- Overlay with Links -->
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
+                                <div style="display: flex; gap: 0.75rem;">
+                                    <a href="https://github.com/Trust-Mwendabai/Solar-Project" target="_blank" style="color: white; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2); border-radius: 50%; transition: all 0.3s ease;">
+                                        <i class="fas fa-external-link-alt" style="font-size: clamp(0.875rem, 2vw, 1.25rem);"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card Content -->
+                        <div class="card-body" style="padding: clamp(0.75rem, 3vw, 1.5625rem);">
+                            <!-- Title and Tag -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.75rem; gap: 0.5rem;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: clamp(0.875rem, 2vw, 1.125rem);">Solar Project</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 0.25rem 0.625rem; border-radius: 1.25rem; font-size: clamp(0.625rem, 1.5vw, 0.75rem); font-weight: 600; white-space: nowrap;">Renewable Energy</span>
+                            </div>
+                            
+                            <!-- Description -->
+                            <p class="card-text" style="color: #455a64; margin-bottom: 0.75rem; font-size: clamp(0.75rem, 1.5vw, 0.875rem); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">Solar energy monitoring and management system with user dashboard and analytics.</p>
+                            
+                            <!-- Tech Tags -->
+                            <div class="d-flex flex-wrap mb-3" style="gap: 0.25rem;">
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">PHP</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">JavaScript</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">Chart.js</span>
+                            </div>
+                            
+                            <!-- Tech Icons and Buttons -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 0.5rem;">
+                                <!-- Tech Icons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-php"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-js"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fas fa-chart-line"></i></span>
+                                </div>
+                                
+                                <!-- Action Buttons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <a href="https://github.com/Trust-Mwendabai/Solar-Project" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 1.25rem; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.5rem, 2vw, 0.9375rem); font-weight: 600; box-shadow: 0 0.3125rem 0.9375rem rgba(126, 87, 194, 0.3); transition: all 0.3s ease; font-size: clamp(0.625rem, 1.5vw, 0.75rem); white-space: nowrap;" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SmartLearnZM -->
+                <div class="col-md-6 col-lg-4 col-sm-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="800" data-category="app">
+                    <div class="card h-100" style="border-radius: 0.9375rem; overflow: hidden; box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1); border: none; transition: all 0.3s ease;">
+                        <!-- Project Image with Overlay -->
+                        <div style="position: relative; overflow: hidden; padding-top: 66.67%;">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="SmartLearn ZM" style="transition: transform 0.5s ease; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            
+                            <!-- Overlay with Links -->
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(74, 20, 140, 0.1) 0%, rgba(74, 20, 140, 0.8) 100%); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;" class="project-overlay">
+                                <div style="display: flex; gap: 0.75rem;">
+                                    <a href="https://github.com/Trust-Mwendabai/SmartLearnZM" target="_blank" style="color: white; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2); border-radius: 50%; transition: all 0.3s ease;">
+                                        <i class="fas fa-external-link-alt" style="font-size: clamp(0.875rem, 2vw, 1.25rem);"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card Content -->
+                        <div class="card-body" style="padding: clamp(0.75rem, 3vw, 1.5625rem);">
+                            <!-- Title and Tag -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.75rem; gap: 0.5rem;">
+                                <h5 class="card-title" style="margin: 0; color: #1a237e; font-weight: 700; font-size: clamp(0.875rem, 2vw, 1.125rem);">SmartLearn ZM</h5>
+                                <span style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; padding: 0.25rem 0.625rem; border-radius: 1.25rem; font-size: clamp(0.625rem, 1.5vw, 0.75rem); font-weight: 600; white-space: nowrap;">Education App</span>
+                            </div>
+                            
+                            <!-- Description -->
+                            <p class="card-text" style="color: #455a64; margin-bottom: 0.75rem; font-size: clamp(0.75rem, 1.5vw, 0.875rem); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">Mobile learning platform with educational resources for Zambian students.</p>
+                            
+                            <!-- Tech Tags -->
+                            <div class="d-flex flex-wrap mb-3" style="gap: 0.25rem;">
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">Kotlin</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">Android</span>
+                                <span class="badge me-1 mb-1" style="background-color: #f0f4f8; color: #4a148c; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.375rem, 1.5vw, 0.75rem); border-radius: 0.75rem; font-weight: 500; font-size: clamp(0.625rem, 1.5vw, 0.75rem);">Firebase</span>
+                            </div>
+                            
+                            <!-- Tech Icons and Buttons -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 0.5rem;">
+                                <!-- Tech Icons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fab fa-android"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fas fa-code"></i></span>
+                                    <span style="color: #7e57c2; font-size: clamp(0.875rem, 2vw, 1.125rem);"><i class="fas fa-mobile-alt"></i></span>
+                                </div>
+                                
+                                <!-- Action Buttons -->
+                                <div class="d-flex" style="gap: 0.5rem;">
+                                    <a href="https://github.com/Trust-Mwendabai/SmartLearnZM" class="btn btn-sm" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white; border-radius: 1.25rem; padding: clamp(0.25rem, 1vw, 0.375rem) clamp(0.5rem, 2vw, 0.9375rem); font-weight: 600; box-shadow: 0 0.3125rem 0.9375rem rgba(126, 87, 194, 0.3); transition: all 0.3s ease; font-size: clamp(0.625rem, 1.5vw, 0.75rem); white-space: nowrap;" target="_blank">Live Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -279,14 +619,22 @@
     </div>
 
     <!-- Call to Action -->
-    <section class="cta-section">
-        <div class="container text-center">
+    <section class="cta-section py-5" style="background: linear-gradient(135deg, #4a148c 0%, #7e57c2 100%); color: white;">
+        <div class="container text-center px-3">
             <div class="row justify-content-center">
-                <div class="col-lg-8" data-aos="fade-up">
-                    <h2>Ready to Start Your Project?</h2>
-                    <p class="lead mb-4">Let's discuss how I can help bring your vision to life</p>
-                    <a href="https://wa.me/263777342846" class="btn btn-lg btn-success me-3"><i class="fab fa-whatsapp me-2"></i>Chat on WhatsApp</a>
-                    <a href="index.html#contact" class="btn btn-lg btn-outline-light">Get in Touch</a>
+                <div class="col-lg-8 col-md-10" data-aos="fade-up">
+                    <h2 style="font-size: clamp(1.75rem, 5vw, 2.5rem); font-weight: 700; margin-bottom: clamp(0.75rem, 3vw, 1.25rem);">Ready to Start Your Project?</h2>
+                    <p class="lead mb-4" style="font-size: clamp(1rem, 3vw, 1.25rem); opacity: 0.9;">Let's discuss how I can help bring your vision to life</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="https://wa.me/260777342846" class="btn btn-success" style="padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 4vw, 1.5rem); font-weight: 600; border-radius: 30px; font-size: clamp(0.875rem, 2vw, 1rem); display: flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+                            <i class="fab fa-whatsapp" style="font-size: 1.2em;"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+                        <a href="index.html#contact" class="btn btn-outline-light" style="padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 4vw, 1.5rem); font-weight: 600; border-radius: 30px; font-size: clamp(0.875rem, 2vw, 1rem); display: flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                            <i class="far fa-envelope"></i>
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -294,12 +642,22 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 Trust Muhau Mwendabai. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        <div class="container text-center px-3">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p class="mb-3" style="font-size: clamp(0.875rem, 2vw, 1rem);">&copy; 2025 Trust Muhau Mwendabai. All rights reserved.</p>
+                    <div class="social-links d-flex justify-content-center gap-3 mb-2">
+                        <a href="#" class="text-white" style="width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: 50%; transition: all 0.3s ease;">
+                            <i class="fab fa-github" style="font-size: clamp(1rem, 2.5vw, 1.25rem);"></i>
+                        </a>
+                        <a href="#" class="text-white" style="width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: 50%; transition: all 0.3s ease;">
+                            <i class="fab fa-linkedin" style="font-size: clamp(1rem, 2.5vw, 1.25rem);"></i>
+                        </a>
+                        <a href="#" class="text-white" style="width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: 50%; transition: all 0.3s ease;">
+                            <i class="fab fa-twitter" style="font-size: clamp(1rem, 2.5vw, 1.25rem);"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
