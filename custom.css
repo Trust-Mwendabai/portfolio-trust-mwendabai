@@ -155,3 +155,195 @@
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* Portfolio Card Hover Effects */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(126, 87, 194, 0.2) !important;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card:hover .project-overlay {
+    opacity: 1 !important;
+}
+
+.project-overlay a {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.card:hover .project-overlay a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card:hover .project-overlay a:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+/* Button hover effects */
+.btn[style*="background: linear-gradient"] {
+    transition: all 0.3s ease !important;
+}
+
+.btn[style*="background: linear-gradient"]:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(126, 87, 194, 0.4) !important;
+}
+
+.btn[style*="border: 1px solid #4a148c"]:hover {
+    background-color: rgba(126, 87, 194, 0.1) !important;
+    transform: translateY(-3px) !important;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    h1[style*="font-size"] {
+        font-size: 2.5rem !important;
+    }
+    
+    h2[style*="font-size"] {
+        font-size: 2rem !important;
+    }
+    
+    p[style*="font-size"] {
+        font-size: 1.1rem !important;
+    }
+    
+    .service-card, .pricing-card, .portfolio-card, .card {
+        margin-bottom: 30px;
+    }
+    
+    .whatsapp-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+    }
+    
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+    
+    .contact-item {
+        margin-bottom: 20px !important;
+    }
+    
+    div[style*="padding: 40px"] {
+        padding: 30px !important;
+    }
+    
+    div[style*="width: 80px; height: 80px"] {
+        width: 65px !important;
+        height: 65px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    h1[style*="font-size"] {
+        font-size: 2rem !important;
+    }
+    
+    h2[style*="font-size"] {
+        font-size: 1.8rem !important;
+    }
+    
+    div[style*="padding: 40px"] {
+        padding: 25px !important;
+    }
+    
+    .contact-item {
+        flex-direction: column !important;
+        text-align: center;
+        align-items: center !important;
+    }
+    
+    .contact-item > div:first-child {
+        margin-right: 0 !important;
+        margin-bottom: 15px !important;
+    }
+    
+    footer h3 {
+        font-size: 1.3rem !important;
+    }
+    
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 15px;
+        left: 15px;
+    }
+    
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    div[style*="width: 70px; height: 70px"] {
+        width: 55px !important;
+        height: 55px !important;
+    }
+    
+    div[style*="width: 60px; height: 60px"] {
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    h1[style*="font-size"] {
+        font-size: 1.8rem !important;
+    }
+    
+    h2[style*="font-size"] {
+        font-size: 1.5rem !important;
+    }
+    
+    a[style*="padding: 15px 40px"] {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+    }
+    
+    .contact-social {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .social-btn {
+        margin-bottom: 10px;
+    }
+    
+    div[style*="display: flex; gap: 15px"] {
+        justify-content: center !important;
+    }
+    
+    div[style*="padding: 40px 30px"] {
+        padding: 25px 15px !important;
+    }
+    
+    div[style*="padding: 25px"] {
+        padding: 20px !important;
+    }
+    
+    div[style*="border-radius: 15px"] {
+        border-radius: 10px !important;
+    }
+    
+    .whatsapp-tooltip {
+        display: none;
+    }
+}
